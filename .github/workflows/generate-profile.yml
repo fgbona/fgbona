@@ -53,9 +53,15 @@ jobs:
           fi
           git commit -m "chore: update profile SVGs [skip ci]"
 
-          # Tenta push com rebase, até 3 tentativas
           for i in 1 2 3; do
-            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            # Tenta rebase; se der conflito, aceita a versão local (recém-gerada)
+            if ! git pull --rebase origin main; then
+              echo "Conflito no rebase, resolvendo com versão local..."
+              git checkout --theirs -- assets/generated/
+              git add assets/generated/
+              GIT_EDITOR=true git rebase --continue || true
+            fi
+            git push origin HEAD:main && exit 0
             echo "Tentativa $i falhou, retentando em 5s..."
             sleep 5
           done
