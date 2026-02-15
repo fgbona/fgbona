@@ -85,13 +85,13 @@ galaxy_arms:
 #   arm: 0-2                  — Which galaxy arm to associate with (index)
 #   description: "..."        — Short description shown on the card
 projects:
-  - repo: "thiagobissoli/riskentia"
+  - repo: "utechsbr/riskentia"
     arm: 2
-    description: "Security & compliance platform integrating automation, risk analysis, and AI-assisted workflows."
+    description: "Severity Assessment System for ICU (SAPS3). Patient, bed, and reporting management with SMR. Validated methodology for predicting mortality in intensive care."
 
-  - repo: "thiagobissoli/elaboral"
+  - repo: "utechsbr/elaboral"
     arm: 2
-    description: "SaaS platform with containerized architecture, scalable backend, and multi-tenant foundations."
+    description: "Occupational health management system with AI analytics. React, Node.js, MySQL."
 
 
 # Theme color overrides (optional — defaults to deep space palette)
