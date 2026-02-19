@@ -85,6 +85,10 @@ galaxy_arms:
 #   arm: 0-2                  — Which galaxy arm to associate with (index)
 #   description: "..."        — Short description shown on the card
 projects:
+  - repo: "fgbona/kubebeaver"
+    arm: 2
+    description: Kubernetes troubleshooting assistant that gathers cluster signals (events, logs, describe) and uses an LLM (Groq or OpenAI-compatible) to produce diagnoses, root causes, and suggested kubectl commands. FastAPI backend, React frontend."
+  
   - repo: "utechsbr/riskentia"
     arm: 2
     description: "Severity Assessment System for ICU (SAPS3). Patient, bed, and reporting management with SMR. Validated methodology for predicting mortality in intensive care."
