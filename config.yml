@@ -37,7 +37,7 @@ profile:
 
 # Social links displayed at the bottom of the profile
 social:
-  email: "fernandobona@gmail.co,"
+  email: "fernandobona@gmail.com,"
   linkedin: "fgbona"
   website: "https://appsec.com.br"
 
@@ -86,7 +86,7 @@ galaxy_arms:
 #   description: "..."        — Short description shown on the card
 projects:
   - repo: "fgbona/kubebeaver"
-    arm: 2
+    arm: 1
     description: Kubernetes troubleshooting assistant that gathers cluster signals (events, logs, describe) and uses an LLM (Groq or OpenAI-compatible) to produce diagnoses, root causes, and suggested kubectl commands. FastAPI backend, React frontend."
   
   - repo: "utechsbr/riskentia"
