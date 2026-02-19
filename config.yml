@@ -86,7 +86,7 @@ galaxy_arms:
 #   description: "..."        — Short description shown on the card
 projects:
   - repo: "fgbona/kubebeaver"
-    arm: 1
+    arm: 0
     description: Kubernetes troubleshooting assistant that gathers cluster signals (events, logs, describe) and uses an LLM (Groq or OpenAI-compatible) to produce diagnoses, root causes, and suggested kubectl commands. FastAPI backend, React frontend."
   
   - repo: "utechsbr/riskentia"
